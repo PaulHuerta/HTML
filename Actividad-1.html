@@ -1,66 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi primer pagina web</title>
-    <style>
-      /* Estilos CSS */
-      html,
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Cambio climatico</h1>
-    <hr size="1" color="DarkTurquoise" />
-    <h2>Terminología</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi primer pagina web</title>
+  <style>
+    /* Estilos CSS */
+    html,
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      padding: 5px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .img {
+      float: right;
+    }
+
+    .img2 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="title">Cambio climatico</h>
+    <hr size="1" color="IndianRed" />
+    <h3>Terminología</h3>
+    <img 
+      class="img"
+      src="data:image/png;base64,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"
+      alt="" />
     <p>
       La definición más general de cambio climático es un cambio en las
       propiedades estadísticas (principalmente su promedio y dispersión) del
       sistema climático considerado durante periodos largos de tiempo,
       independiente de la causa.​ Por consiguiente, las fluctuaciones durante
       periodos más cortos que unas cuantas décadas, como por ejemplo El Niño, no
-      representan un cambio climático.
+      representan un cambio climático.En este sentido, especialmente en el
+      contexto de la política medioambiental, cambio climático se ha convertido
+      en sinónimo de calentamiento global antropogénico. En las publicaciones
+      científicas, calentamiento global refiere al aumento de las temperaturas
+      superficiales mientras que cambio climático incluye al calentamiento
+      global y todos los demás efectos que el aumento de los niveles de gases de
+      efecto invernadero produce. La Convención Marco de la Naciones Unidas
+      sobre el Cambio Climático, define al cambio climático en su artículo 1
+      párrafo segundo, como un cambio de clima atribuido directa e
+      indirectamente a la actividad humana que altera la composición de la
+      atmósfera y que se suma a la variabilidad natural del clima observadas
+      durante períodos de tiempos comparables. A veces se confunden17​ los
+      términos Cambio climático con Cambio global.
     </p>
-    <hr width="50%" size="3" align="right" color="IndianRed" />
-    <h3>Esto es otro subitulo con h3</h3>
     <p>
-      Lorem
-      <strong> ipsum dolor sit, amet consectetur adipisicing elit.</strong>
-      Voluptates dolores nostrum aut recusandae suscipit hic repudiandae tempora
-      odio. Optio maiores odit incidunt sed, nihil commodi in. A iusto
-      laboriosam maiores.
+      El término a veces se usa para referir específicamente al cambio climático
+      causado por la actividad humana, en lugar de cambios en el clima que
+      pueden haber resultado como parte de los procesos naturales de la Tierra.
+      En este sentido, especialmente en el contexto de la política
+      medioambiental, cambio climático se ha convertido en sinónimo de
+      calentamiento global antropogénico. En las publicaciones científicas,
+      calentamiento global refiere al aumento de las temperaturas superficiales
+      mientras que cambio climático incluye al calentamiento global y todos los
+      demás efectos que el aumento de los niveles de gases de efecto invernadero
+      produce. La Convención Marco de la Naciones Unidas sobre el Cambio
+      Climático, define al cambio climático en su artículo 1 párrafo segundo,
+      como un cambio de clima atribuido directa e indirectamente a la actividad
+      humana que altera la composición de la atmósfera y que se suma a la
+      variabilidad natural del clima observadas durante períodos de tiempos
+      comparables. A veces se confunden17​ los términos Cambio climático con
+      Cambio global.
     </p>
-    <hr width="50%" size="3" align="left" color="LimeGreen" />
-    <h4>Esto es otro subitulo h4</h4>
+    <hr size="2" color="IndianRed" />
+    <h3>Causas</h3>
     <p>
-      Lorem <i> ipsum dolor sit, amet consectetur adipisicing elit.</i>
-      Voluptates dolores nostrum aut recusandae suscipit hic repudiandae tempora
-      odio. Optio maiores odit incidunt sed, nihil commodi in. A iusto
-      laboriosam maiores.
+      El clima es un promedio del tiempo atmosférico a una escala de tiempo dado que la Organización Meteorológica
+      Mundial ha estandarizado en 30 años.18​ Los distintos climas se corresponden principalmente con la latitud
+      geográfica, la altitud, la distancia al mar, la orientación del relieve terrestre con respecto a la insolación
+      (vertientes de solana y umbría) y a la dirección de los vientos (vertientes de Sotavento y barlovento) y por
+      último, las corrientes marinas. Estos factores y sus variaciones en el tiempo producen cambios en los principales
+      elementos constituyentes del clima: temperatura atmosférica, presión atmosférica, vientos, humedad y
+      precipitaciones.
     </p>
-    <hr width="50%" size="3" color="Violet" />
-    <h5>Esto es otro subitulo h5</h5>
+    <div class="img2">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/SurfaceTemperature.jpg/220px-SurfaceTemperature.jpg"
+      alt="">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/MonthlyMeanT.gif/220px-MonthlyMeanT.gif" 
+      alt="">
+    </div>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
-      dolores nostrum aut recusandae suscipit hic repudiandae tempora odio.
-      Optio maiores odit incidunt sed, nihil commodi in. A iusto laboriosam
-      maiores.
+      Un cambio en la emisión de radiación solar, en la composición de la atmósfera, en la disposición de los
+      continentes, en las corrientes marinas o en la órbita de la Tierra puede modificar la distribución de energía y el
+      equilibrio térmico, alterando así profundamente el clima cuando se trata de procesos de larga duración.
     </p>
-    <hr size="3" color="Orange" />
-    <h6>Esto es otro subitulo h6</h6>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
-      dolores nostrum aut recusandae suscipit hic repudiandae tempora odio.
-      Optio maiores odit incidunt sed, nihil commodi in. A iusto laboriosam
-      maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-      repellat odio adipisci, quis architecto asperiores nobis autem cum
-      molestias fuga quia, id aperiam magnam sequi officiis officia vitae
-      corrupti? Soluta.
+      En última instancia, para que se produzca un cambio climático global, debe actuar algún forzamiento climático, es
+      decir, cualquier factor que incida en el balance de energía del sistema climático, modificando la cantidad de
+      energía que el sistema recibe del Sol o la cantidad de energía que el sistema pierde por emisión desde la Tierra
+      al espacio exterior. Los forzamientos pueden ser las variaciones en los parámetros orbitales de la Tierra, en el
+      albedo terrestre, en la concentración de gases de efecto invernadero, en la concentración de aerosoles tanto de
+      procedencia natural, como son los procedentes de erupciones volcánicas, como los de origen antropogénico que
+      proceden de actividades humanas, entre otros.
     </p>
-  </body>
+    <p>
+      Otros factores como la distribución de los continentes pueden terminar afectando a alguno de los forzamiento e
+      inducir un cambio climático global. Por ejemplo, la ocupación del océano ecuatorial por una gran masa de tierra,
+      como ocurrió con el supercontinente Rodinia durante el Neoproterozoico, puede contribuir a una mayor reflexión de
+      radiación solar, aumentando el albedo y produciendo cierto enfriamiento que puede provocar la formación de hielo
+      que, a su vez, vuelve a aumentar el albedo, en un ciclo conocido como realimentación hielo-albedo.19​ La
+      fragmentación de Rodinia20​ hace unos 700-800 millones de años, pudo exponer mayor cantidad de corteza terrestre a
+      la erosión por lluvia y provocar que el Ciclo Geoquímico Carbonato-Silicato aumentara el secuestro de CO2
+      atmosférico contribuyendo a una disminución de la temperatura que terminase induciendo una glaciación global, más
+      conocida como bola de nieve.
+    </p>
+    <p>
+      El cambio climático actual es, de manera muy probable, totalmente antropogénico y se relaciona principalmente con
+      la intensificación del efecto invernadero debido a las emisiones industriales procedentes de la quema de
+      combustibles fósiles.​ Las contribuciones probables de los forzamientos naturales y la variabilidad interna al
+      cambio de la temperatura global desde 1951 son insignificantes.4
+    </p>
+    <hr size="2" color="IndianRed" />
+</body>
 </html>
