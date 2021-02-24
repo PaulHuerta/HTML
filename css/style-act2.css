@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.hdqwalls.com/wallpapers/abstract-spider-web-4k-d5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #1f1f1f;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+p {
+    border: 2px solid #FAE2F4;
+    border-radius: 30px;
+    background-color: #1f1f1fa1;
+    color: white;
+    padding: 25px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    overflow: hidden
+}
+
+img {
+    max-width: 181px;
+    max-height: 256px;
+    width: 100%;
+    height: auto;
+    float: right;
+    shape-margin: 0%;
+    shape-outside: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png);
+    -webkit-user-drag: none;
+}
+
+p:hover {
+    background-color: #1f1f1f;
+}
