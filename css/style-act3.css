@@ -1,0 +1,74 @@
+/* Selector Universal */
+
+* {
+    background-color: #394867;
+    font-family: sans-serif;
+    letter-spacing: 0;
+}
+
+/* Selector por etiquetas */
+
+section {
+    border: 2px solid #fadcaa;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+h1 {
+    color: #fadcaa;
+}
+
+p {
+    color: #fadcaa;
+}
+
+/* Selector por ID */
+
+#section {
+    border: 2px solid #f56a79;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#h1 {
+    color: #f56a79;
+}
+
+#p {
+    color: #f56a79;
+}
+
+/* Selector por clase */
+
+.section {
+    border: 2px solid #50d890;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.h1 {
+    color: #50d890;
+}
+
+.p {
+    color: #50d890;
+}
+
+/*  */
+
+/*  */
+
+.footer {
+    text-align: center;
+    border: 2px solid white;
+    padding: 0px;
+    border-radius: 20px;
+    width: auto;
+}
+
+.footer-text {
+    color: white;
+}
