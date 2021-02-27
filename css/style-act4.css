@@ -31,25 +31,23 @@ body, html {
 .list-grid {
     display: grid;
     grid-template-columns: auto auto;
-    align-self: auto;
 }
 
 .list-grid p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .list-grid div {
     padding: 10px;
     background: #2b2b2b;
-    margin: 15px;
+    margin: 10px auto;
     border: 1px solid #f7f7f7;
-    border-radius: 20px;
+    border-radius: 20px;   
 }
 
 .list-grid div:hover {
-    transform: scale(1.01);
     transition: 0.2s linear;
     border: 2px solid #f7f7f7;
 }
