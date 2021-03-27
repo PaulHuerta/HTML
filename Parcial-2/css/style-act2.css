@@ -1,63 +1,51 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-.grid-container>* {
-    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 4px;
-    padding: 10px;
-    text-align: center;
-}
-
-.html {
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+    margin: 0;
     height: 100%;
 }
 
 .grid-container{
     display: grid;
-    grid-gap: 10px;
     grid-template:
     "header" 100px
     "navbar" 50px
     "main" auto
     "sidebar" 100px
     "footer" 100px ;
-}
-
-body {
-    font-family: sans-serif;
-    font-size: 12px;
-    min-height: 100%;
+    text-align: center;
 }
 
 .header {
     grid-area: header;
-    background: #aa96da;
+    background: #202040;
 }
 
 .navbar {
     grid-area: navbar;
-    background: #a8d8ea;
+    background: #1f4068;
 }
 
 .sidebar {
     grid-area: sidebar;
-    background: #fcbad3;
+    background: #0f4c75;
 }
 
 .main {
     grid-area: main;
-    background: #ffffd2;
+    background: #543864;
 }
 
 .footer {
     grid-area: footer;
-    background: #f5ffff;
+    background: #515585;
 }
 
-@media (min-width:600px){
+@media only screen and (min-width:600px){
     .grid-container {
         grid-template:
         "header header" 100px
@@ -67,7 +55,7 @@ body {
     }
 }
 
-@media (min-width:900px){
+@media only screen and (min-width: 900px){
     .grid-container {
         grid-template:
         "header header header" 100px
