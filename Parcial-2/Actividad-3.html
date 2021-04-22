@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form>
+      <p>
+        <label for="name">Ingresa tu nombre</label>
+        <input type="text" id="name" />
+      </p>
+      <p>
+        <label for="textarea">Deja tu mensaje</label>
+        <br />
+        <textarea name="texarea" id="textarea" cols="30" rows="10"></textarea>
+      </p>
+      <p>
+        <label>Selecciona tus gustos</label>
+        <br />
+        <label for="checkbox1">Peliculas</label>
+        <input type="checkbox" name="peliculas" id="checkbox1" />
+        <br />
+        <label for="checkbox2">Deportes</label>
+        <input type="checkbox" name="deportes" id="checkbox2" />
+        <br />
+        <label for="checkbox3">Videojuegos</label>
+        <input type="checkbox" name="videojuegos" id="checkbox3" />
+      </p>
+      <p>
+        <label>Ingresos</label>
+        <br />
+        <label for="radio1">Menos de $500.00</label>
+        <input type="radio" name="ingresos" id="radio1" value="bajo" />
+        <br />
+        <label for="radio2">Menos de $1000.00</label>
+        <input type="radio" name="ingresos" id="radio2" value="medio" />
+        <br />
+        <label for="radio3">Mas de $1000.00</label>
+        <input type="radio" name="ingresos" id="radio3" value="alto" />
+      </p>
+      <p>
+        <label for="sexo">Sexo</label>
+        <select name="sexo" id="sexo">
+          <option value="h">Hombre</option>
+          <option value="m">Mujer</option>
+        </select>
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+      </p>
+    </form>
+  </body>
+</html>
